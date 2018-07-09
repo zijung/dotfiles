@@ -1,0 +1,6 @@
+[module/xwindow]
+type = internal/xwindow
+
+format-prefix = "  "
+format-prefix-foreground = ${colors.foreground}
+label = %title:0:60:...%

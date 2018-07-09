@@ -1,0 +1,42 @@
+[bar/bottom]
+monitor = ${env:MONITOR}
+monitor-strict = true
+dpi = -1
+bottom = true
+width = 100%
+height = 26
+;border-left-size = 12
+;border-right-size = 12
+;border-bottom-size = 12
+offset-x = 0
+offset-y = 0
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+overline-size = 0
+overline-color = #f00
+underline-size = 0
+underline-color = #00f
+
+spacing = 1
+padding-left = 0
+padding-right = 2
+module-margin-left = 1
+module-margin-right = 2
+
+font-0 = Noto Sans CJK:pixelsize=10;4
+font-1 = Font Awesome 5 Pro:style=Regular:pixelsize=10;4
+font-2 = Font Awesome 5 Brands:pixelsize=10;4
+
+modules-left =
+modules-center = networkspeedup networkspeeddown
+modules-right = filesystem-slash temperature cpu memory
+
+tray-position = right
+tray-padding = 2
+tray-maxsize = 32
+tray-transparent = true
+;tray-background = ${colors.background}
+
+; vim:ft=dosini

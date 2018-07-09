@@ -1,0 +1,26 @@
+[module/github]
+type = internal/github
+
+; Accessing an access token stored in an environment variable
+token = ${env:GITHUB_ACCESS_TOKEN}
+
+; Whether empty notifications should be displayed or not
+empty-notifications = false
+
+; Number of seconds in between requests
+interval = 10
+
+; Available tags:
+;   <label> (default)
+format = <label>
+
+format-underline = #2aa198
+format-prefix = " "
+format-prefix-foreground = #5b
+
+; Available tokens:
+;   %notifications% (default)
+; Default: Notifications: %notifications%
+label = %notifications%
+
+; vim:ft=dosini

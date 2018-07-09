@@ -1,0 +1,10 @@
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export QT_QPA_PLATFORMTHEME=gtk2
+
+if [ -n "$DESKTOP_SESSION" ]; then
+  eval $(gnome-keyring-daemon --start)
+  export SSH_AUTH_SOCK
+fi

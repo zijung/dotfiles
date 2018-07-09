@@ -1,0 +1,8 @@
+#!/bin/sh
+
+i3lock -n -i "${HOME}/.config/i3/lockscreen.png" --indicator \
+    --insidecolor=373445ff --ringcolor=ffffffff --line-uses-inside \
+    --keyhlcolor=d23c3dff --bshlcolor=d23c3dff --separatorcolor=00000000 \
+    --insidevercolor=fecf4dff --insidewrongcolor=d23c3dff \
+    --ringvercolor=ffffffff --ringwrongcolor=ffffffff --indpos="86:h-80" \
+    --radius=15 --veriftext="" --wrongtext="" --noinputtext=""
