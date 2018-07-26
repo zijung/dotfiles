@@ -1,6 +1,6 @@
 [module/networkspeedup]
 type = internal/network
-interface = wlp3s0
+interface = enp4s0
 label-connected = "%upspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = " "
@@ -9,7 +9,7 @@ format-connected-prefix-foreground = #5b
 
 [module/networkspeeddown]
 type = internal/network
-interface = wlp3s0
+interface = enp4s0
 label-connected = "%downspeed:7%"
 format-connected = <label-connected>
 format-connected-prefix = " "

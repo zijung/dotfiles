@@ -1,1 +1,2 @@
+rofi.dpi:  120
 rofi.modi: window,run,ssh,drun
