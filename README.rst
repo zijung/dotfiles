@@ -25,10 +25,7 @@ Debian
     sudo apt install update-systemd-boot
 
     # 安裝 microcode
-    # Intel：
     sudo apt install intel-microcode
-    # AMD：
-    sudo apt install amd64-microcode
 
     # 安裝 Network Manager 然後重啓
     sudo apt install network-manager
@@ -38,10 +35,7 @@ Debian
     nmcli dev wifi connect [WiFi 名稱] password [WiFi 密碼]
 
     # 安裝配置文件
-    # Macbook Pro：
     sudo apt install zijung-libinput zijung-x11-common zijung-lightdm-mbp zijung-lightdm-gtk-greeter zijung-noto zijung-disable-xhc-wake zijung-google-chrome
-    # PC：
-    sudo apt install zijung-libinput zijung-x11-common zijung-lightdm zijung-lightdm-gtk-greeter zijung-noto zijung-google-chrome
 
     # 安裝軟件
     sudo apt install i3-gaps-next polybar i3lock-color xss-lock mate-terminal fonts-font-awesome-pro x11-xserver-utils psmisc pulseaudio rofi feh compton dunst fcitx-rime scrot
@@ -75,7 +69,4 @@ Debian
 
     # 轉換鎖屏圖片大小
     sudo apt install imagemagick
-    # Macbook Pro：
     convert /usr/share/backgrounds/macos/Yosmite.jpg -resize x1800 ~/.config/i3/lockscreen.png
-    # PC：
-    convert /usr/share/backgrounds/macos/Yosmite.jpg -resize x1440 ~/.config/i3/lockscreen.png

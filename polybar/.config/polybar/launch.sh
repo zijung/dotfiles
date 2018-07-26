@@ -7,7 +7,7 @@ killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
 # Launch top and bottom
-MONITOR=DP-1 polybar top &
-MONITOR=DP-1 polybar bottom &
+MONITOR=eDP1 polybar top &
+MONITOR=eDP1 polybar bottom &
 
 echo "Bars launched..."
