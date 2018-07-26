@@ -64,6 +64,9 @@ Debian
     # 安裝 haveged
     sudo apt install haveged
 
+    # 安裝 Nvidia 閉源驅動
+    sudo apt install nvidia-driver
+
     # 強制使用英文目錄
     LANG=C xdg-user-dirs-update
 
