@@ -27,6 +27,11 @@ Debian
     # 安裝 microcode
     sudo apt install intel-microcode
 
+    # 設置 log 持久化
+    sudo mkdir -p /var/log/journal
+    sudo systemd-tmpfiles --create --prefix /var/log/journal
+    sudo systemctl restart systemd-journaldmkdir -p /var/log/journal systemd-tmpfiles
+
     # 安裝 Network Manager 然後重啓
     sudo apt install network-manager
     sudo reboot
