@@ -69,6 +69,9 @@ Debian
     # 安裝 haveged
     sudo apt install haveged
 
+    # 安裝 redshift
+    sudo apt install geoclue-2-demo redshift
+
     # 強制使用英文目錄
     LANG=C xdg-user-dirs-update
 
