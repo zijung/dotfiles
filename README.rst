@@ -69,6 +69,9 @@ Debian
     # 安裝 haveged
     sudo apt install haveged
 
+    # 安裝 redshift
+    sudo apt install geoclue-2-demo redshift
+
     # 安裝 Nvidia 閉源驅動
     sudo apt install nvidia-driver
 

@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+if ! pgrep -f '/usr/lib/geoclue-2.0/demos/agent' > /dev/null
+then
+  /usr/lib/geoclue-2.0/demos/agent &
+fi
+
+killall -q redshift
+
+# Wait until the processes have been shut down
+while pgrep -x redshift >/dev/null; do sleep 1; done
+
+/bin/redshift &
