@@ -11,6 +11,11 @@ Debian
     sudo cp /usr/share/systemd/tmp.mount /etc/systemd/system/
     sudo systemctl enable tmp.mount
 
+    # 設置 log 持久化
+    sudo mkdir -p /var/log/journal
+    sudo systemd-tmpfiles --create --prefix /var/log/journal
+    sudo systemctl restart systemd-journald
+
     # 安裝 zsh 和 git，並將 root 和當前用戶的 shell 設置爲 zsh
     sudo apt install zsh git
     sudo chsh -s /bin/zsh
@@ -26,11 +31,6 @@ Debian
 
     # 安裝 microcode
     sudo apt install intel-microcode
-
-    # 設置 log 持久化
-    sudo mkdir -p /var/log/journal
-    sudo systemd-tmpfiles --create --prefix /var/log/journal
-    sudo systemctl restart systemd-journaldmkdir -p /var/log/journal systemd-tmpfiles
 
     # 安裝 Network Manager 然後重啓
     sudo apt install network-manager
