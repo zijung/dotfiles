@@ -40,7 +40,7 @@ Debian
     nmcli dev wifi connect [WiFi 名稱] password [WiFi 密碼]
 
     # 安裝配置文件
-    sudo apt install zijung-libinput zijung-x11-common zijung-lightdm-mbp zijung-lightdm-gtk-greeter zijung-noto zijung-disable-xhc-wake zijung-google-chrome
+    sudo apt install zijung-libinput zijung-x11-common zijung-noto zijung-sudo zijung-lightdm-mbp zijung-lightdm-gtk-greeter zijung-disable-xhc-wake zijung-google-chrome
 
     # 安裝軟件
     sudo apt install i3-gaps-next polybar i3lock-color xss-lock mate-terminal fonts-font-awesome-pro x11-xserver-utils psmisc pulseaudio rofi feh compton dunst fcitx-rime scrot
@@ -70,8 +70,7 @@ Debian
     sudo apt install haveged
 
     # 安裝並設置 redshift
-    sudo apt install geoclue-2-demo redshift
-    echo "\n[redshift]\nallowed=true\nsystem=false\nusers=" | sudo tee -a /etc/geoclue/geoclue.conf
+    sudo apt install redshift
 
     # 強制使用英文目錄
     LANG=C xdg-user-dirs-update
