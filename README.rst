@@ -76,8 +76,7 @@ Debian
     sudo apt install haveged
 
     # 安裝並設置 redshift
-    sudo apt install geoclue-2-demo redshift
-    echo "\n[redshift]\nallowed=true\nsystem=false\nusers=" | sudo tee -a /etc/geoclue/geoclue.conf
+    sudo apt install redshift
 
     # 強制使用英文目錄
     LANG=C xdg-user-dirs-update
