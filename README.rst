@@ -44,9 +44,9 @@ Debian
 
     # 安裝配置文件
     # Macbook Pro：
-    sudo apt install zijung-libinput zijung-x11-common zijung-lightdm-mbp zijung-lightdm-gtk-greeter zijung-noto zijung-disable-xhc-wake zijung-google-chrome
+    sudo apt install zijung-libinput zijung-x11-common zijung-noto zijung-sudo zijung-lightdm-mbp zijung-lightdm-gtk-greeter zijung-disable-xhc-wake zijung-google-chrome
     # PC：
-    sudo apt install zijung-libinput zijung-x11-common zijung-lightdm zijung-lightdm-gtk-greeter zijung-noto zijung-google-chrome
+    sudo apt install zijung-libinput zijung-x11-common zijung-noto zijung-sudo zijung-lightdm zijung-lightdm-gtk-greeter zijung-google-chrome
 
     # 安裝軟件
     sudo apt install i3-gaps-next polybar i3lock-color xss-lock mate-terminal fonts-font-awesome-pro x11-xserver-utils psmisc pulseaudio rofi feh compton dunst fcitx-rime scrot
