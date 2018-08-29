@@ -17,8 +17,13 @@ secondary = #e60053
 alert = #bd2c40
 
 [global/wm]
-margin-top = 5
-margin-bottom = 5
+; Adjust the _NET_WM_STRUT_PARTIAL top value
+;   Used for top aligned bars
+margin-bottom = 0
+
+; Adjust the _NET_WM_STRUT_PARTIAL bottom value
+;   Used for bottom aligned bars
+margin-top = 0
 
 [settings]
 ; The throttle settings lets the eventloop swallow up til X events
@@ -41,12 +46,6 @@ screenchange-reload = true
 # include bars
 include-file = ~/.config/polybar/bars/top
 include-file = ~/.config/polybar/bars/bottom
-
-
-[module/username]
-type = custom/text
-content = Zijung Chueh
-
 
 # include modules
 include-file = ~/.config/polybar/modules/battery

@@ -12,6 +12,7 @@ interval = 0.5
 ;   <ramp-coreload>
 format = <label> <ramp-coreload>
 format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
 
 ; Available tokens:
 ;   %percentage% (default) - total cpu load

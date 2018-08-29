@@ -13,6 +13,7 @@ interval = 2
 ;   <ramp-free>
 format = <label> <bar-used>
 format-prefix = " "
+format-prefix-foreground = ${colors.foreground-alt}
 
 ; Available tokens:
 ;   %percentage_used% (default)

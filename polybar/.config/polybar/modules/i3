@@ -67,7 +67,7 @@ label-padding = 8
 ; Default: %mode%
 label-mode = %mode%
 label-mode-padding = 2
-label-mode-background = #e60053
+label-mode-background = ${colors.background}
 
 ; Available tokens:
 ;   %name%
@@ -76,9 +76,9 @@ label-mode-background = #e60053
 ;   %output%
 ; Default: %icon%  %name%
 label-focused = %icon%
-label-focused-foreground = #ffffff
-;label-focused-background = #3f3f3f
-label-focused-underline = #ffffff
+label-focused-foreground = ${colors.foreground}
+label-focused-background = ${colors.background-alt}
+;label-focused-underline = ${colors.foreground}
 label-focused-padding = ${self.label-padding}
 
 ; Available tokens:
